@@ -12,6 +12,7 @@ de macOS.
 - police Inter ;
 - monitoring CPU, RAM, réseau et températures ;
 - aperçu des fenêtres au survol des icônes du dock ;
+- affichage Finder en colonnes dans GNOME Fichiers (`Ctrl+3`) ;
 - fond d'écran et écran de verrouillage assortis.
 
 Le script ne modifie pas GDM, le gestionnaire de connexion, afin de ne pas
@@ -40,9 +41,14 @@ WhiteSur et les extensions GNOME sont des projets tiers. Après une mise à nive
 majeure de Fedora ou GNOME, vérifiez leur compatibilité avant de relancer le
 script.
 
+La vue en colonnes provient du dépôt COPR tiers
+[`yannmasoch/nautilus-my-computer`](https://github.com/yannmasoch/nautilus-my-computer).
+Elle est encore marquée bêta par son auteur.
+
 ## Sources principales
 
 - [WhiteSur GTK](https://github.com/vinceliuice/WhiteSur-gtk-theme)
 - [WhiteSur Icons](https://github.com/vinceliuice/WhiteSur-icon-theme)
 - [WhiteSur Cursors](https://github.com/vinceliuice/WhiteSur-cursors)
 - [Dock Window Preview](https://extensions.gnome.org/extension/9492/dock-window-preview/)
+- [My Computer for Nautilus](https://github.com/yannmasoch/nautilus-my-computer)

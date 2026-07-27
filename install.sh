@@ -26,9 +26,11 @@ for command in sudo dnf git curl gsettings python3; do
 done
 
 echo "Installation des paquets Fedora…"
+sudo dnf copr enable -y yannmasoch/nautilus-my-computer
 sudo dnf install -y \
   git curl sassc glib2-devel libxml2 gtk-murrine-engine lm_sensors \
   rsms-inter-fonts gnome-tweaks gnome-extensions-app \
+  nautilus-my-computer \
   gnome-shell-extension-dash-to-dock \
   gnome-shell-extension-user-theme \
   gnome-shell-extension-blur-my-shell \
@@ -44,9 +46,6 @@ git clone --depth=1 https://github.com/vinceliuice/WhiteSur-cursors.git "${work_
 
 TERM=linux "${work_dir}/gtk/install.sh" \
   -c dark -o normal -l --shell \
-  -i apple -b default -p 30 -h default --round
-TERM=linux "${work_dir}/gtk/install.sh" \
-  -c dark -o normal --shell \
   -i apple -b default -p 30 -h default --round
 "${work_dir}/icons/install.sh" -t default -a
 "${work_dir}/cursors/install.sh"
@@ -144,4 +143,5 @@ gsettings set org.gnome.shell enabled-extensions "[
 
 echo
 echo "Installation terminée."
+echo "Dans GNOME Fichiers, utilisez Ctrl+3 pour activer la vue Finder en colonnes."
 echo "Déconnectez-vous puis reconnectez-vous pour charger toutes les extensions."
