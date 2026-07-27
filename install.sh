@@ -36,6 +36,11 @@ sudo dnf install -y \
   gnome-shell-extension-blur-my-shell \
   gnome-shell-extension-system-monitor-applet
 
+echo "Configuration de la mise en veille immédiate à la fermeture du capot…"
+sudo install -Dm644 \
+  "$(dirname "${BASH_SOURCE[0]}")/system/60-lid-suspend.conf" \
+  /etc/systemd/logind.conf.d/60-lid-suspend.conf
+
 work_dir="$(mktemp -d "${TMPDIR:-/tmp}/fedora-macos-setup.XXXXXXXX")"
 trap 'rm -rf "${work_dir}"' EXIT
 

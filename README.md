@@ -13,6 +13,7 @@ de macOS.
 - monitoring CPU, RAM, réseau et températures ;
 - aperçu des fenêtres au survol des icônes du dock ;
 - affichage Finder en colonnes dans GNOME Fichiers (`Ctrl+3`) ;
+- mise en veille immédiate à la fermeture du capot ;
 - fond d'écran et écran de verrouillage assortis.
 
 Le script ne modifie pas GDM, le gestionnaire de connexion, afin de ne pas
